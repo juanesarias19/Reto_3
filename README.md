@@ -1,17 +1,32 @@
 ### Reto 3
 Algoritmo para obtener los números primos hasta n, usando pseudocódigo y diagramas de flujo
 <pre>
- Definir función PRIMO(n):
-    Inicializar s como VERDADERO
-    Para k desde 2 hasta raíz_cuadrada(n) + 1 hacer:
-        s ← s Y (n módulo k ≠ 0)
-    Fin Para
-    Retornar s
-
-Leer y convertir a entero el número ingresado, guardar en y
-Si PRIMO(y) entonces:
-    Mostrar "Es primo"
-Si no:
-    Mostrar "No es primo"
+ Algoritmo Primos
+	
+    Escribir "Ingrese la cantidad de primos:"
+    Leer cant
+	
+    Escribir 2 // El primer primo es 2
+    mostrados <- 1
+    n <- 3 // Iniciar con el primer número impar
+	
+    Mientras mostrados < cant Hacer
+        es_primo <- Verdadero // Suponer que 'n' es primo
+		
+        Para i <- 3 hasta RC(n) con paso 2 Hacer
+            Si n MOD i = 0 Entonces
+                es_primo <- Falso // Si es divisible, no es primo
+            FinSi
+        FinPara
+		
+        Si es_primo Entonces
+            Escribir n // Mostrar el número primo
+            mostrados <- mostrados + 1
+        FinSi
+		
+        n <- n + 2 // Saltar a los siguientes números impares
+    FinMientras
+	
+FinAlgoritmo
 </pre>
----
+
