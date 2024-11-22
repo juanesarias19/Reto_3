@@ -35,3 +35,5 @@ Este es el digrama de flujo del anterior pseudocodigo
 ![Diagrama de flujo](https://github.com/user-attachments/assets/8ac395c7-266d-4cb6-b46d-4c1909ae518e)
 
 
+PD. Usé PSeint para la construcción del Pseudocodigo y del diagrama de flujo
+
